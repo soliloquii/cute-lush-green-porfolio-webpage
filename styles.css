@@ -1,0 +1,184 @@
+body {
+    background-color: #eff8e5;
+    font-family: Tahoma;
+}
+
+.container {
+    height: auto;
+    min-height: 100%;
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    position: static; */
+}
+
+.bg-img img {
+    /* position: fixed; */
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.bio {
+    position: fixed;
+    width: 200px;
+    height: 40%;
+    background-color:aliceblue;
+    left: 15%;
+    top: 18%;
+    outline: solid;
+    outline-width: thin;
+    padding: 20px;
+    border-radius: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.bio-tab-container {
+    position: fixed;
+    /* width: 200px; */
+    /* max-width: 200px; */
+    /* right: 10%; */
+    width: 240px;
+    top: 14.5%;
+    left: 15%;
+    background-color: #a1b985;
+    box-shadow: 1px 1px black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.bio.port-tab {
+    /* width: 200px; */
+}
+
+.tab-container {
+    position: fixed;
+    /* height: fit-content; */
+    width: 41.5%;
+    max-width: 41.4%;
+    left: 55%;
+    background-color: #a1b985;
+    top: 1%;
+    box-shadow: 1px 1px black;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+.port-tab {
+    /* width: 40.5%; */
+    /* height: auto; */
+    padding: 4px;
+    position: relative;
+    border: 1px black;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: thin;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tab-text {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    /* width: auto; */
+    background-color: #1315ca;
+    padding: 3px;
+    margin: 1px;
+    outline-width: thin;
+    outline-color: black;
+}
+
+/* .test {
+    position: absolute;
+    top: 70%;
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: thin;
+    width: 80px;
+    height: auto;
+    padding: 3px;
+    
+}
+
+.color-test {
+    background-color: white;
+    width: auto;
+    padding: 2px;
+    align-self: auto;
+} */
+
+.portfolio {
+    display: grid;
+    grid-template-rows: 0 200px;
+    gap: 50px 100px;
+    /* background-color: #d2a8cc; */
+    background-image: url("pictures/port_green_hrt.jpg");
+    background-size: 20%;
+    background-repeat: repeat;
+    position: fixed;
+    left: 55%;
+    width: 40.5%;
+    height: 90%;
+    padding: 6px;
+    outline: black;
+    outline-style: solid;
+    outline-width: thin;
+    overflow-y: scroll;
+    border-radius: 16px;
+    box-shadow: 4px 5px 15px grey;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.projs-container {
+    /* top: 12px; */
+    /* position: static; */
+} 
+
+.projects {
+    position: static;
+    /* display: flex; */
+    top: 92%;
+}
+
+button {
+    float: right;
+    margin: 2px 1.5px 2px 1.5px;
+    width: 20px;
+    height: auto;
+    background: #C0C0C0;
+    border-width: 1px;
+    padding: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Tahoma;
+    outline-width: 3px;
+}
+
+#hrtb {
+    padding-right: 20px;
+}
+
+
+.projects {
+    height: 230px;
+    width: 95%;
+    position: static;
+    /* display: relative; */
+    display: grid;
+}
+
+.project img {
+    outline: auto;
+    outline-style: solid;
+    outline-width: 2.4px;
+    outline-color: #9ab282;
+    width: 35%;
+    height: auto;
+}
