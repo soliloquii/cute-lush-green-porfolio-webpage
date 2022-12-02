@@ -4,8 +4,11 @@ body {
 }
 
 .container {
-    height: auto;
-    min-height: 100%;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    padding: 6%;
+    /* align-items: center; */
     /* background-repeat: no-repeat;
     background-size: cover;
     position: static; */
@@ -14,16 +17,15 @@ body {
 .bg-img img {
     /* position: fixed; */
     width: 30%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    display: inline-block;
+    position: fixed;
+    left: 34%;
 }
 
 .bio {
-    position: fixed;
+    position: relative;
     width: 200px;
-    height: 40%;
+    height: 49%;
     background-color:aliceblue;
     left: 15%;
     top: 18%;
@@ -31,18 +33,19 @@ body {
     outline-width: thin;
     padding: 20px;
     border-radius: 16px;
+    box-shadow: 4px 5px 15px grey;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
 .bio-tab-container {
-    position: fixed;
+    position: relative;
     /* width: 200px; */
     /* max-width: 200px; */
     /* right: 10%; */
     width: 240px;
-    top: 14.5%;
-    left: 15%;
+    top: -20px;
+    right: 10%;
     background-color: #a1b985;
     box-shadow: 1px 1px black;
     border-top-left-radius: 8px;
@@ -53,17 +56,36 @@ body {
     /* width: 200px; */
 }
 
+.nav-con {
+    position: sticky;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 90%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+nav img {
+    display: inline;
+    height: auto;
+    width: 19%;
+}
+
 .tab-container {
-    position: fixed;
+    display: grid;
+    position: relative;
     /* height: fit-content; */
-    width: 41.5%;
-    max-width: 41.4%;
-    left: 55%;
+    width:499.9px;
+    left: -6.9px;
+    /* max-width: 41.65%; */
     background-color: #a1b985;
-    top: 1%;
+    top: -6.9px;
     box-shadow: 1px 1px black;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 
@@ -73,9 +95,9 @@ body {
     padding: 4px;
     position: relative;
     border: 1px black;
-    outline-style: solid;
+    /* outline-style: solid;
     outline-color: black;
-    outline-width: thin;
+    outline-width: thin; */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -113,17 +135,20 @@ body {
 } */
 
 .portfolio {
-    display: grid;
+    /* display: grid; */
     grid-template-rows: 0 200px;
     gap: 50px 100px;
+    align-self: center;
     /* background-color: #d2a8cc; */
     background-image: url("pictures/port_green_hrt.jpg");
     background-size: 20%;
     background-repeat: repeat;
-    position: fixed;
-    left: 55%;
-    width: 40.5%;
-    height: 90%;
+    position: relative;
+    left: 50%;
+    width: 488px;
+    /* width: 100%; */
+    bottom: 430px;
+    height: 640px;
     padding: 6px;
     outline: black;
     outline-style: solid;
@@ -135,10 +160,11 @@ body {
     border-top-right-radius: 8px;
 }
 
-.projs-container {
-    /* top: 12px; */
-    /* position: static; */
-} 
+.port-cont {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
 
 .projects {
     position: static;
@@ -181,4 +207,40 @@ button {
     outline-color: #9ab282;
     width: 35%;
     height: auto;
+}
+
+.bio button {
+    color: gray;
+}
+
+
+.bg-img img {
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 2s infinite alternate;
+    position: fixed;
+    /* width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; */
+
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }
